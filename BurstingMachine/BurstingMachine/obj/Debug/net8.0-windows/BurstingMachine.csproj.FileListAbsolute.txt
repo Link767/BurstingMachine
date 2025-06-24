@@ -119,3 +119,7 @@ C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debu
 C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debug\net8.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
 C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debug\net8.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\App.baml

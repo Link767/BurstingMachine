@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:BurstingMachine"
         xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Style="{StaticResource MaterialDesignWindow}"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"        Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="b2v" />
     </Window.Resources>
@@ -35,30 +36,15 @@
         </Grid.RowDefinitions>
 
         <Button x:Name="btnConnect"
-                Grid.Column="2" Content="Соеденить" 
+                Grid.Column="1" Content="Соеденить" 
                 HorizontalAlignment="Left" 
-                Grid.Row="1" VerticalAlignment="Top" Width="98" 
-                Grid.ColumnSpan="2" Margin="16,10,0,0" Click="btnConnect_Click"/>
-        <Button x:Name="btnDisconekt"
-                Grid.Column="1" Content="Отключить" 
-                HorizontalAlignment="Left" 
-                Grid.Row="1" VerticalAlignment="Top" Width="98" 
-                Grid.ColumnSpan="2" Margin="10,10,0,0"/>
-        <Button x:Name="btnUp"
-                Grid.Column="7" Content="Вверх" 
-                HorizontalAlignment="Left" 
-                Grid.Row="5" VerticalAlignment="Center" 
-                Width="105" Margin="80,0,0,0" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnDown"
-                Grid.Column="7" Content="Вниз" 
-                HorizontalAlignment="Left" 
-                Grid.Row="4" VerticalAlignment="Center" 
-                Width="105" Margin="80,0,0,0" Grid.ColumnSpan="2"/>
+                Grid.Row="1" VerticalAlignment="Top" Width="114" 
+                Grid.ColumnSpan="2" Margin="71,10,0,0" Click="btnConnect_Click" Background="{x:Null}" BorderBrush="Black" Foreground="#DD000000"/>
         <Button x:Name="btnStop"
                 Grid.Column="7" Content="Cтоп" 
                 HorizontalAlignment="Left" 
                 Grid.Row="6" VerticalAlignment="Center" 
-                Width="105" Grid.ColumnSpan="2" Margin="80,0,0,0" Click="btnStop_Click"/>
+                Width="105" Grid.ColumnSpan="2" Margin="80,0,0,0" Click="btnStop_Click" Background="{x:Null}" BorderBrush="Black" Foreground="#DD000000"/>
         <TextBox x:Name="TBLog" 
                  Grid.Column="7" Grid.ColumnSpan="2" 
                  HorizontalAlignment="Left" Margin="65,14,0,0" 
@@ -68,10 +54,6 @@
                   Grid.ColumnSpan="2" HorizontalAlignment="Left" 
                   Margin="38,10,0,0" Grid.Row="1" VerticalAlignment="Top" 
                   Width="120"/>
-        <Button x:Name="Up" 
-                Grid.Column="8" Content="UP" 
-                HorizontalAlignment="Center" Margin="0,39,0,0" 
-                Grid.Row="3" VerticalAlignment="Top" Width="44" Click="Up_Click"/>
 
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Grid.Column="1" 
                            Margin="10,10,48,10" Grid.Row="2" Grid.ColumnSpan="7"
