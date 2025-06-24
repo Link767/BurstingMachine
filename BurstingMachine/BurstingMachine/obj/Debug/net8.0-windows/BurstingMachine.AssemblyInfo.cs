@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BurstingMachine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a16cf223f4ccda2a5f8944be86c424e72ce7803")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+358a18e72c517ba2b07c3408d5d90e6cc8e49907")]
 [assembly: System.Reflection.AssemblyProductAttribute("BurstingMachine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BurstingMachine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
