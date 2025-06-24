@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Drawing;
+using ScottPlot;
 
 namespace BurstingMachine
 {
@@ -121,6 +123,16 @@ namespace BurstingMachine
             _serialPort.Write(bytes, 0, bytes.Length);
 
             MessageBox.Show("Команда UP отправлена");
+        }
+
+        private void btnStop_Click(object sender, RoutedEventArgs e)
+        {
+            double[] dataX = { 1, 2, 3, 4, 5 };
+            double[] dataY = { 1, 4, 9, 16, 25 };
+            var myPlot = WpfPlot1.Plot.Add.Scatter(dataX, dataY);
+            myPlot.LineColor = ScottPlot.Colors.Red;
+            myPlot.MarkerColor = ScottPlot.Colors.Red;
+            WpfPlot1.Refresh();
         }
     }
 }

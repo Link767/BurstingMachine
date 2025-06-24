@@ -1,12 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|c:\\users\\win-112\\github\\burstingmachine\\burstingmachine\\burstingmachine\\win\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|solutionrelative:burstingmachine\\win\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|c:\\users\\win-112\\github\\burstingmachine\\burstingmachine\\burstingmachine\\win\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|solutionrelative:burstingmachine\\win\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BurstingMachine\\Win\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MainWindow.xaml.cs",
+              "RelativeToolTip": "BurstingMachine\\Win\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAqwIUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T11:20:21.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "BurstingMachine\\Win\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MainWindow.xaml",
+              "RelativeToolTip": "BurstingMachine\\Win\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T11:12:56.664Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
