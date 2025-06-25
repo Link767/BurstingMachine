@@ -7,7 +7,9 @@
         xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"        Title="MainWindow" Height="450" Width="800">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="1080" Width="1920">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="b2v" />
     </Window.Resources>
@@ -26,6 +28,10 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -35,30 +41,31 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="btnConnect"
-                Grid.Column="1" Content="Соеденить" 
-                HorizontalAlignment="Left" 
-                Grid.Row="1" VerticalAlignment="Top" Width="114" 
-                Grid.ColumnSpan="2" Margin="71,10,0,0" Click="btnConnect_Click" Background="{x:Null}" BorderBrush="Black" Foreground="#DD000000"/>
-        <Button x:Name="btnStop"
-                Grid.Column="7" Content="Cтоп" 
-                HorizontalAlignment="Left" 
-                Grid.Row="6" VerticalAlignment="Center" 
-                Width="105" Grid.ColumnSpan="2" Margin="80,0,0,0" Click="btnStop_Click" Background="{x:Null}" BorderBrush="Black" Foreground="#DD000000"/>
-        <TextBox x:Name="TBLog" 
-                 Grid.Column="7" Grid.ColumnSpan="2" 
-                 HorizontalAlignment="Left" Margin="65,14,0,0" 
-                 Grid.Row="1" TextWrapping="Wrap"
-                 VerticalAlignment="Top" Width="120" Height="45"/>
-        <ComboBox x:Name="CBPort" Grid.Column="3"
-                  Grid.ColumnSpan="2" HorizontalAlignment="Left" 
-                  Margin="38,10,0,0" Grid.Row="1" VerticalAlignment="Top" 
-                  Width="120"/>
-
-        <ScottPlot:WpfPlot x:Name="WpfPlot1" Grid.Column="1" 
-                           Margin="10,10,48,10" Grid.Row="2" Grid.ColumnSpan="7"
-                           Grid.RowSpan="5"/>
-
-
+        <ToolBarTray Margin="0,0,0,1" Grid.Row="1" Grid.ColumnSpan="10">
+            <ToolBar
+                ClipToBounds="False"
+                Style="{StaticResource MaterialDesignToolBar}">
+                <Menu>
+                    <MenuItem
+                        Header="Nested menu">
+                        <MenuItem
+                            Header="График" />
+                        <MenuItem
+                            Header="Настройки" />
+                    </MenuItem>
+                </Menu>
+                <Separator/>
+                <ComboBox x:Name="CBPort"
+                    Width="80"
+                    Margin="8,0"
+                    materialDesign:HintAssist.Hint="Порт"
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}">
+                </ComboBox>
+            </ToolBar>
+        </ToolBarTray>
+        <Frame x:Name="ChartFrame" Grid.Column="1" 
+               Margin="10,93,40,10" Grid.Row="5" 
+               Grid.ColumnSpan="4" Grid.RowSpan="5"
+               Width="900" Height = "450"/>
     </Grid>
 </Window>

@@ -12,6 +12,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
 using ScottPlot;
+using ScottPlot.WPF;
+using System.Drawing.Printing;
+using System.Xml.Linq;
+using BurstingMachine.Pages;
 
 namespace BurstingMachine
 {
@@ -22,6 +26,7 @@ namespace BurstingMachine
         {
             InitializeComponent();
             LoadComPort();
+            ChartFrame.Navigate(new Chart());
 
         }
         private byte CalculateBCC(byte[] data)
@@ -40,99 +45,6 @@ namespace BurstingMachine
                 CBPort.SelectedIndex = 0;
             else
                 CBPort.Text = "Нет доступных COM портов";
-        }
-        private void SendCheckCommand()
-        {
-            var cmd = new ShortCommand
-            {
-                Head = new ProgHead20
-                {
-                    Marker = 0x14,
-                    CmdType = DevCmdType.Check, // CMD_CHECK = 0
-                    Length = 6
-                },
-                Num = 0,
-                Bcc = 0 // временно
-            };
-
-            byte[] data = StructConverter.ToBytes(cmd);
-            data[^1] = CalculateBCC(data[..^1]); // пересчёт BCC
-
-            _serialPort.Write(data, 0, data.Length);
-
-            // для отладки можно вывести лог
-            Console.WriteLine("Check-команда отправлена: " + BitConverter.ToString(data));
-        }
-
-        private void btnConnect_Click(object sender, RoutedEventArgs e)
-        {
-            if (CBPort.SelectedItem == null)
-            {
-                CBPort.Text = "Выберите COM порт";
-                return;
-            }
-
-            try
-            {
-                string selectedPort = CBPort.SelectedItem.ToString();
-                _serialPort.PortName = selectedPort;
-                _serialPort.BaudRate = 9600;
-                _serialPort.Parity = Parity.None;
-                _serialPort.DataBits = 8;
-                _serialPort.StopBits = StopBits.One;
-                _serialPort.Handshake = Handshake.None;
-                _serialPort.Open();
-
-                MessageBox.Show($"Подключено к {selectedPort}");
-
-                // 👉 Отправляем команду CMD_CHECK
-                SendCheckCommand();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка: {ex.Message}");
-            }
-        }
-
-        private void Up_Click(object sender, RoutedEventArgs e)
-        {
-            if (!_serialPort.IsOpen)
-            {
-                MessageBox.Show("COM-порт не открыт");
-                return;
-            }
-
-            // Сборка команды UP
-            ShortCommand cmd = new ShortCommand
-            {
-                Head = new ProgHead20
-                {
-                    Marker = 0x14, // PRG_FLAG_20
-                    CmdType = DevCmdType.GoToUp,
-                    Length = 6     // длина команды
-                },
-                Num = 0,
-                Bcc = 0 // потом обновим
-            };
-
-            // Получаем байты
-            byte[] bytes = StructConverter.ToBytes(cmd);
-            bytes[^1] = CalculateBCC(bytes[..^1]); // пересчитываем BCC
-
-            // Отправка
-            _serialPort.Write(bytes, 0, bytes.Length);
-
-            MessageBox.Show("Команда UP отправлена");
-        }
-
-        private void btnStop_Click(object sender, RoutedEventArgs e)
-        {
-            double[] dataX = { 1, 2, 3, 4, 5 };
-            double[] dataY = { 1, 4, 9, 16, 25 };
-            var myPlot = WpfPlot1.Plot.Add.Scatter(dataX, dataY);
-            myPlot.LineColor = ScottPlot.Colors.Red;
-            myPlot.MarkerColor = ScottPlot.Colors.Red;
-            WpfPlot1.Refresh();
         }
     }
 }
