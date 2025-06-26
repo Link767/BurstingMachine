@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\BUddha\\Git\\BurstingMachine\\BurstingMachine\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|c:\\users\\win-112\\github\\burstingmachine\\burstingmachine\\burstingmachine\\win\\messagewar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|solutionrelative:burstingmachine\\win\\messagewar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|c:\\users\\win-112\\github\\burstingmachine\\burstingmachine\\burstingmachine\\win\\messageinf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|solutionrelative:burstingmachine\\win\\messageinf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|c:\\users\\win-112\\github\\burstingmachine\\burstingmachine\\burstingmachine\\win\\messageerr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|solutionrelative:burstingmachine\\win\\messageerr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +22,43 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MessageWar.xaml",
+              "DocumentMoniker": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MessageWar.xaml",
+              "RelativeDocumentMoniker": "BurstingMachine\\Win\\MessageWar.xaml",
+              "ToolTip": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MessageWar.xaml",
+              "RelativeToolTip": "BurstingMachine\\Win\\MessageWar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T11:16:44.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MessageInf.xaml",
+              "DocumentMoniker": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MessageInf.xaml",
+              "RelativeDocumentMoniker": "BurstingMachine\\Win\\MessageInf.xaml",
+              "ToolTip": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MessageInf.xaml",
+              "RelativeToolTip": "BurstingMachine\\Win\\MessageInf.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T11:16:43.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MessageErr.xaml",
+              "DocumentMoniker": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MessageErr.xaml",
+              "RelativeDocumentMoniker": "BurstingMachine\\Win\\MessageErr.xaml",
+              "ToolTip": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MessageErr.xaml",
+              "RelativeToolTip": "BurstingMachine\\Win\\MessageErr.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-26T11:16:42.491Z",
+              "EditorCaption": ""
             }
           ]
         }

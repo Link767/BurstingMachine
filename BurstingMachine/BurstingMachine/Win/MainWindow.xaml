@@ -9,7 +9,7 @@
         Style="{StaticResource MaterialDesignWindow}"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="1080" Width="1920">
+        Title="MainWindow" Height="908" Width="1609">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="b2v" />
     </Window.Resources>
@@ -47,25 +47,24 @@
                 Style="{StaticResource MaterialDesignToolBar}">
                 <Menu>
                     <MenuItem
-                        Header="Nested menu">
+                        Header="Окна">
                         <MenuItem
                             Header="График" />
                         <MenuItem
-                            Header="Настройки" />
+                            Header="Настройки" Click="SetingsPage_Click" />
                     </MenuItem>
                 </Menu>
                 <Separator/>
-                <ComboBox x:Name="CBPort"
-                    Width="80"
-                    Margin="8,0"
-                    materialDesign:HintAssist.Hint="Порт"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-                </ComboBox>
             </ToolBar>
         </ToolBarTray>
-        <Frame x:Name="ChartFrame" Grid.Column="1" 
-               Margin="10,93,40,10" Grid.Row="5" 
-               Grid.ColumnSpan="4" Grid.RowSpan="5"
-               Width="900" Height = "450"/>
+
+        <Frame x:Name="ChartFrame" Grid.Column="1" Grid.Row="4" 
+               NavigationUIVisibility="Hidden"
+               Grid.ColumnSpan="8" Grid.RowSpan="7" 
+               Margin="0,10,0,0" Height="629"/>
+        <Button x:Name="Err"
+            Grid.Column="5" Content="Err" 
+            HorizontalAlignment="Left" Margin="100,46,0,0" 
+            Grid.Row="2" VerticalAlignment="Top" Click="Err_Click"/>
     </Grid>
 </Window>

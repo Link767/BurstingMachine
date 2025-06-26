@@ -9,11 +9,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Res\caution.png" />
+    <None Remove="Res\error.png" />
+    <None Remove="Res\info.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
     <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
     <PackageReference Include="OxyPlot.Core" Version="2.2.0" />
     <PackageReference Include="ScottPlot.WPF" Version="5.0.55" />
     <PackageReference Include="System.IO.Ports" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Res\caution.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Res\error.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Res\info.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

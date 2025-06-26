@@ -5,5 +5,17 @@
     <Compile Update="Pages\Chart.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Setings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win\MessageErr.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win\MessageInf.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Win\MessageWar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

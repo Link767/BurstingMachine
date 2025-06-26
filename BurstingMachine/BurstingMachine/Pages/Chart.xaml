@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       xmlns:materialDesign = "http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:ScottPlot = "clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
-      d:DesignHeight="450" d:DesignWidth="900"
+      d:DesignHeight="629" d:DesignWidth="1589"
       Title="Chart">
 
     <Grid>
@@ -41,12 +41,13 @@
         <ScottPlot:WpfPlot x:Name = "WpfPlot1"
                            Grid.Row = "1" Grid.ColumnSpan = "8"
                            Grid.RowSpan = "8" Margin = "10,10,10,10" />
+
         <Button x:Name = "btnTest"
                 Grid.Column = "7" Content = "Тест"
-                HorizontalAlignment = "Left" VerticalAlignment = "Center"
+                HorizontalAlignment = "Left" VerticalAlignment = "Top"
                 Width = "88" Click = "btnStop_Click"
                 Background = "{x:Null}" BorderBrush = "Black"
-                Foreground = "#DD000000" Margin = "14,0,0,0" />
+                Foreground = "#DD000000" Margin = "101,23,0,0"/>
 
         <TextBox
             MaxWidth="400"
@@ -55,7 +56,7 @@
             IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
             Style="{StaticResource MaterialDesignFilledTextBox}"
             Height="41" TextAlignment="Justify" Grid.Column="2" 
-            Margin="56,9,56,0" Grid.ColumnSpan="2"/>
+            Margin="33,19,33,10"/>
 
         <TextBox
             MaxWidth="400"
@@ -64,6 +65,6 @@
             IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
             Style="{StaticResource MaterialDesignFilledTextBox}"
             Height="41" TextAlignment="Justify" Grid.Column="4" 
-            Margin="56,9,56,0" Grid.ColumnSpan="2"/>
+            Margin="34,18,33,10"/>
     </Grid>
 </Page>

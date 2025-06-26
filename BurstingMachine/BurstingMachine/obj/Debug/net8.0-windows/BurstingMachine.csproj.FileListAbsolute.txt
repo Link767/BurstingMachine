@@ -209,3 +209,13 @@ C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\ne
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\ref\BurstingMachine.dll
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Chart.g.cs
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Chart.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Chart.g.cs
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Chart.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Setings.g.cs
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Setings.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageErr.g.cs
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageInf.g.cs
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageWar.g.cs
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageErr.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageInf.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageWar.baml

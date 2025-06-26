@@ -1,4 +1,10 @@
 ﻿using BurstingMachine.Lib;
+using BurstingMachine.Pages;
+using BurstingMachine.Win;
+using ScottPlot;
+using ScottPlot.WPF;
+using System.Drawing;
+using System.Drawing.Printing;
 using System.IO.Ports;
 using System.Text;
 using System.Windows;
@@ -10,12 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Drawing;
-using ScottPlot;
-using ScottPlot.WPF;
-using System.Drawing.Printing;
 using System.Xml.Linq;
-using BurstingMachine.Pages;
 
 namespace BurstingMachine
 {
@@ -25,9 +26,7 @@ namespace BurstingMachine
         public MainWindow()
         {
             InitializeComponent();
-            LoadComPort();
             ChartFrame.Navigate(new Chart());
-
         }
         private byte CalculateBCC(byte[] data)
         {
@@ -36,15 +35,16 @@ namespace BurstingMachine
                 bcc += b; // если в STM32 XOR, если сумма — просто bcc += b
             return bcc;
         }
-        private void LoadComPort()
+        private void SetingsPage_Click(object sender, RoutedEventArgs e)
         {
-            string[] ports = SerialPort.GetPortNames();
-            CBPort.ItemsSource = ports;
+            ChartFrame.Navigate(new Setings());
+        }
 
-            if (ports.Length > 0)
-                CBPort.SelectedIndex = 0;
-            else
-                CBPort.Text = "Нет доступных COM портов";
+        private void Err_Click(object sender, RoutedEventArgs e)
+        {
+            string i = "Test";
+            MessageErr messageErr = new MessageErr(i);
+            messageErr.Show();
         }
     }
 }
