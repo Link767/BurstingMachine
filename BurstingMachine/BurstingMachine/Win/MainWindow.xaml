@@ -55,12 +55,6 @@
                     </MenuItem>
                 </Menu>
                 <Separator/>
-                <CheckBox x:Name="CBNotClearChart"
-                    IsChecked="True"
-                    Style="{StaticResource MaterialDesignFilterChipSecondaryCheckBox}" 
-                    Grid.Column="6" Grid.ColumnSpan="2">
-                        Не очищать график
-                </CheckBox>
             </ToolBar>
         </ToolBarTray>
 

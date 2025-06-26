@@ -79,8 +79,7 @@
 
         <CheckBox x:Name="CBNotClearChart"
             IsChecked="True"
-            Style="{StaticResource MaterialDesignFilterChipSecondaryCheckBox}" 
-            Grid.Column="6" Margin="86,28,0,10" Grid.ColumnSpan="2">
+            Style="{StaticResource MaterialDesignFilterChipSecondaryCheckBox}" Margin="10,23,0,15">
             Не очищать график
         </CheckBox>
     </Grid>

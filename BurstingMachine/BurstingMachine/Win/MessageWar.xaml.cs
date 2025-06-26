@@ -16,7 +16,7 @@ namespace BurstingMachine.Win
 {
     public partial class MessageWar : Window
     {
-        public MessageWar()
+        public MessageWar(string mess)
         {
             InitializeComponent();
         }

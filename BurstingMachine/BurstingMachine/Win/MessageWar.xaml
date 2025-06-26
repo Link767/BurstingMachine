@@ -46,9 +46,9 @@
                  Click="TBOk_Click_1" Background="{x:Null}" 
                  BorderBrush="Black" Foreground="#DD000000"/>
 
-            <TextBlock Text="Информация" Grid.Column="1" 
+            <TextBlock Text="Предупреждение" Grid.Column="1" 
                        Grid.Row="1" FontSize="14" Grid.ColumnSpan="3" 
-                       Margin="24,0,27,0" FontStyle="Italic"/>
+                       Margin="24,0,2,0" FontStyle="Italic"/>
 
             <Button
                 materialDesign:ShadowAssist.ShadowAnimationDuration="0:0:0.5"
