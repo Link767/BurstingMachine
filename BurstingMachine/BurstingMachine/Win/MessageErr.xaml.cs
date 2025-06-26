@@ -19,7 +19,7 @@ namespace BurstingMachine.Win
         public MessageErr(string mess)
         {
             InitializeComponent();
-            //TBoxErr.Text = mess;
+            TBlockError.Text = mess;
         }
 
         private void TBOk_Click_1(object sender, RoutedEventArgs e)

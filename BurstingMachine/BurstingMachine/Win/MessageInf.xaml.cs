@@ -19,6 +19,7 @@ namespace BurstingMachine.Win
         public MessageInf(string mess)
         {
             InitializeComponent();
+            TBlockInf.Text = mess;
         }
 
         private void TBOk_Click_1(object sender, RoutedEventArgs e)

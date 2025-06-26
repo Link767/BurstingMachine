@@ -38,5 +38,16 @@ namespace BurstingMachine
         {
             ChartFrame.Navigate(new Setings());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string i = "TESTTETSTSTSTTSTSTSTTSTSTSTSTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTSTSTSTSTSTTS";
+            MessageErr messageErr = new MessageErr(i);
+            messageErr.Show();
+            MessageInf messageInf = new MessageInf(i);
+            messageInf.Show();
+            MessageWar messageWar = new MessageWar(i);
+            messageWar.Show();
+        }
     }
 }

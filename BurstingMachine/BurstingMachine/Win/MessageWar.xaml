@@ -66,6 +66,10 @@
 
             <Image Source="/Res/caution.png"
                    Margin="7,0,24,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+            
+            <TextBlock x:Name="TBlockWar" Grid.Column="1" 
+                       Margin="10,13,10,6" Grid.Row="2" Grid.ColumnSpan="6" 
+                       Grid.RowSpan="3" TextWrapping="Wrap"/>
         </Grid>
     </Border>
 </Window>

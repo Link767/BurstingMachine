@@ -46,7 +46,9 @@
                  Click="TBOk_Click_1" Background="{x:Null}" 
                  BorderBrush="Black" Foreground="#DD000000"/>
 
-            <TextBlock Text="Ошибка" Grid.Column="1" Grid.Row="1" FontSize="14" Grid.ColumnSpan="2" Margin="24,0,11,0" FontStyle="Italic"/>
+            <TextBlock Text="Ошибка" Grid.Column="1" Grid.Row="1" 
+                       FontSize="14" Grid.ColumnSpan="2" Margin="24,0,11,0" 
+                       FontStyle="Italic"/>
 
             <Button
                 materialDesign:ShadowAssist.ShadowAnimationDuration="0:0:0.5"
@@ -61,9 +63,13 @@
                     <materialDesign:PackIcon Kind="WindowClose" Height="20" Width="22" />
                 </StackPanel>
             </Button>
-            
+
             <Image Source="/Res/error.png"
                    Margin="7,0,24,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <TextBlock x:Name="TBlockError" Grid.Column="1" 
+                       Margin="10,13,10,6" Grid.Row="2" Grid.ColumnSpan="6" 
+                       Grid.RowSpan="3" TextWrapping="Wrap"/>
         </Grid>
     </Border>
 </Window>
