@@ -28,23 +28,15 @@ namespace BurstingMachine
             InitializeComponent();
             ChartFrame.Navigate(new Chart());
         }
-        private byte CalculateBCC(byte[] data)
+
+        private void Chart(object sender, RoutedEventArgs e)
         {
-            byte bcc = 0;
-            foreach (var b in data)
-                bcc += b; // если в STM32 XOR, если сумма — просто bcc += b
-            return bcc;
+            ChartFrame.Navigate(new Chart());
         }
+
         private void SetingsPage_Click(object sender, RoutedEventArgs e)
         {
             ChartFrame.Navigate(new Setings());
-        }
-
-        private void Err_Click(object sender, RoutedEventArgs e)
-        {
-            string i = "Test";
-            MessageErr messageErr = new MessageErr(i);
-            messageErr.Show();
         }
     }
 }

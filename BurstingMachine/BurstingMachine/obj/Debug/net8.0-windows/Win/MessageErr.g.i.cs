@@ -64,7 +64,7 @@ namespace BurstingMachine.Win {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BurstingMachine;V1.0.0.0;component/win/messageerr.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BurstingMachine;component/win/messageerr.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Win\MessageErr.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
