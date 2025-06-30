@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\obj\Release\net8.0-windows\
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Release\net8.0-windows\
 BurstingMachine
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\App.xaml
-1-650399654
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\App.xaml
+7-1882652018
 
-7-1103935783
-199666292484
-Win\MainWindow.xaml;
+13-550808725
+221875929807
+Pages\Chart.xaml;Pages\ChartAndHis.xaml;Pages\Setings.xaml;Win\MainWindow.xaml;Win\MessageErr.xaml;Win\MessageInf.xaml;Win\MessageWar.xaml;
 
 False
 

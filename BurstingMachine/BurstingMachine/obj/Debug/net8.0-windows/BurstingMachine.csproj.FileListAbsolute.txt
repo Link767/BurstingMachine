@@ -227,3 +227,7 @@ C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\ne
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageErr.baml
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageInf.baml
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\MessageWar.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\Logs.g.cs
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\Logs.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Reports.g.cs
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Reports.baml

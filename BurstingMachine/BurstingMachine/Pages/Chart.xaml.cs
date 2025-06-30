@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +14,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ScottPlot;
+using ScottPlot.Plottables;
+using ScottPlot.WPF;
 
 namespace BurstingMachine.Pages
 {
@@ -24,8 +29,8 @@ namespace BurstingMachine.Pages
 
         private void btnStop_Click(object sender, RoutedEventArgs e)
         {
-            double[] dataX = { 1, 2, 3, 4, 5 };
-            double[] dataY = { 1, 4, 9, 16, 25 };
+            double[] dataX = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            double[] dataY = { 1, 4, 6, 8, 10, 12, 14, 16, 10 };
             var myPlot = WpfPlot1.Plot.Add.Scatter(dataX, dataY);
             myPlot.LineColor = ScottPlot.Colors.Red;
             myPlot.MarkerColor = ScottPlot.Colors.Red;

@@ -3,6 +3,7 @@ using BurstingMachine.Pages;
 using BurstingMachine.Win;
 using ScottPlot;
 using ScottPlot.WPF;
+using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.IO.Ports;
@@ -22,15 +23,9 @@ namespace BurstingMachine
 {
     public partial class MainWindow : Window
     {
-        private SerialPort _serialPort = new SerialPort();
         public MainWindow()
         {
             InitializeComponent();
-            ChartFrame.Navigate(new Chart());
-        }
-
-        private void Chart(object sender, RoutedEventArgs e)
-        {
             ChartFrame.Navigate(new Chart());
         }
 
@@ -39,15 +34,46 @@ namespace BurstingMachine
             ChartFrame.Navigate(new Setings());
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Chart_Click(object sender, RoutedEventArgs e)
         {
-            string i = "TESTTETSTSTSTTSTSTSTTSTSTSTSTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTSTSTSTSTSTTS";
-            MessageErr messageErr = new MessageErr(i);
-            messageErr.Show();
-            MessageInf messageInf = new MessageInf(i);
+            ChartFrame.Navigate(new Chart());
+
+        }
+
+        private void History_Click(object sender, RoutedEventArgs e)
+        {
+            Logs logs = new Logs();
+            logs.Show();
+        }
+        private void btnHelp_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageInf messageInf = new MessageInf("Тут будет подсказка");
             messageInf.Show();
-            MessageWar messageWar = new MessageWar(i);
-            messageWar.Show();
+        }
+
+        private void CBMeasurement_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (CBMeasurement.SelectedItem is ComboBoxItem selectedItem)
+            {
+                string selectedText = selectedItem.Content.ToString();
+
+                switch (selectedText)
+                {
+                    case "Однократное измерение":
+                        btnLogs.Visibility = Visibility.Collapsed;
+                        LineLogs.Visibility = Visibility.Collapsed;
+                        break;
+                    case "Множественное измерение":
+                        btnLogs.Visibility = Visibility.Visible;
+                        LineLogs.Visibility = Visibility.Visible;
+                        break;
+                }
+            }
+        }
+
+        private void Report_Click(object sender, RoutedEventArgs e)
+        {
+            ChartFrame.Navigate(new Reports());
         }
     }
 }

@@ -19,6 +19,7 @@
             <ColumnDefinition Width = "*" />
             <ColumnDefinition Width = "*" />
             <ColumnDefinition Width = "*" />
+
             <ColumnDefinition Width = "*" />
         </Grid.ColumnDefinitions >
         <Grid.RowDefinitions >
@@ -35,52 +36,46 @@
 
         <ScottPlot:WpfPlot x:Name = "WpfPlot1"
                            Grid.Row = "1" Grid.ColumnSpan = "8"
-                           Grid.RowSpan = "8" Margin = "10,10,160,26" />
+                           Grid.RowSpan = "8" Margin = "10,10,10,26" />
 
         <Button x:Name = "btnTest"
                 Grid.Column = "7" Content = "Тест"
-                HorizontalAlignment = "Left" VerticalAlignment = "Top"
+                HorizontalAlignment = "Left" VerticalAlignment = "Center"
                 Width = "88" Click = "btnStop_Click"
                 Background = "{x:Null}" BorderBrush = "Black"
-                Foreground = "#DD000000" Margin = "74,28,0,0" Grid.Row="6"/>
-
-        <Button x:Name = "btnSaveChart"
-                Grid.Column = "7" Content = "Сохранить"
-                HorizontalAlignment = "Left" VerticalAlignment = "Top"
-                Width = "112"
-                Background = "{x:Null}" BorderBrush = "Black"
-                Foreground = "#DD000000" Margin = "62,8,0,0" Grid.Row="7"/>
-
-        <Button x:Name = "btnClearChart"
-                Grid.Column = "7" Content = "Очистить"
-                HorizontalAlignment = "Left" VerticalAlignment = "Top"
-                Width = "112"
-                Background = "{x:Null}" BorderBrush = "Black"
-                Foreground = "#DD000000" Margin = "62,48,0,0" 
-                Grid.Row="7" Grid.RowSpan="2"/>
+                Foreground = "#DD000000" Margin = "101,0,0,0"/>
 
         <TextBox x:Name="TBNewtons"
             MaxWidth="400"
             materialDesign:HintAssist.Hint="СИЛА"
             AcceptsReturn="True"
             IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
-            Style="{StaticResource MaterialDesignFilledTextBox}"
-            Height="41" TextAlignment="Justify" Grid.Column="2" 
-            Margin="33,19,33,10"/>
+            Style="{StaticResource MaterialDesignFilledTextBox}" 
+                 TextAlignment="Justify" Grid.Column="2" 
+            Margin="5,10,5,5"/>
 
         <TextBox x:Name="TBSpeed"
             MaxWidth="400"
             materialDesign:HintAssist.Hint="ХОД"
             AcceptsReturn="True"
             IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
-            Style="{StaticResource MaterialDesignFilledTextBox}"
-            Height="41" TextAlignment="Justify" Grid.Column="4" 
-            Margin="34,18,33,10"/>
+            Style="{StaticResource MaterialDesignFilledTextBox}" 
+            TextAlignment="Justify" Grid.Column="4" 
+            Margin="5,10,5,5"/>
 
-        <CheckBox x:Name="CBNotClearChart"
-            IsChecked="True"
-            Style="{StaticResource MaterialDesignFilterChipSecondaryCheckBox}" Margin="10,23,0,15">
-            Не очищать график
-        </CheckBox>
+        <Button x:Name = "btnIncrease"
+                HorizontalAlignment = "Left" VerticalAlignment = "Center"
+                Width = "76"
+                Background = "{x:Null}" BorderBrush = "{x:Null}"
+                Foreground = "#DD000000" Margin = "5,0,0,0" Height="60">
+            <materialDesign:PackIcon Kind="MagnifyPlusOutline" Height="42" Width="53"/>
+        </Button>
+        <Button x:Name = "btnReduce"
+                HorizontalAlignment = "Left" VerticalAlignment = "Center"
+                Width = "76"
+                Background = "{x:Null}" BorderBrush = "{x:Null}"
+                Foreground = "#DD000000" Margin = "86,0,0,0" Height="60">
+            <materialDesign:PackIcon Kind="MagnifyMinusOutline" Height="42" Width="53"/>
+        </Button>
     </Grid>
 </Page>

@@ -10,8 +10,14 @@
         AllowsTransparency="True"
         Background="Transparent"
         WindowStartupLocation="CenterScreen"
-        Title="MessageErr" Height="200" Width="300">
-    <Border CornerRadius="20" BorderBrush="Gray" BorderThickness="1">
+        Height="200" Width="300">
+    <Border CornerRadius="20" BorderThickness="1">
+        <Border.BorderBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0.191"/>
+                <GradientStop Color="#FFFFB400"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
         <Border.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="White" Offset="0.191"/>
@@ -66,7 +72,7 @@
 
             <Image Source="/Res/caution.png"
                    Margin="7,0,24,0" Grid.Row="1" Grid.ColumnSpan="2"/>
-            
+
             <TextBlock x:Name="TBlockWar" Grid.Column="1" 
                        Margin="10,13,10,6" Grid.Row="2" Grid.ColumnSpan="6" 
                        Grid.RowSpan="3" TextWrapping="Wrap"/>
