@@ -153,7 +153,7 @@ namespace BurstingMachine {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BurstingMachine;component/win/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BurstingMachine;V1.0.0.0;component/win/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Win\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
