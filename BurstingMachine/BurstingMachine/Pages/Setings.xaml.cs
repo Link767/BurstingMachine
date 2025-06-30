@@ -38,5 +38,10 @@ namespace BurstingMachine.Pages
         {
 
         }
+
+        private void btnTestSetings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -53,7 +53,7 @@
                 <ComboBox x:Name="CBMeasurement"
                   materialDesign:HintAssist.Hint="Количество измерений"
                   Style="{StaticResource MaterialDesignOutlinedComboBox}" 
-                  Grid.ColumnSpan="2" Height="46" SelectionChanged="CBMeasurement_SelectionChanged" Width="236">
+                  Grid.ColumnSpan="2" Height="46" Width="236">
                     <ComboBoxItem Name="Solo"
                         Content="Однократное измерение" />
                     <ComboBoxItem Name="Grup"
@@ -70,9 +70,8 @@
                         Click="Report_Click"/>
                 <Separator Background="#3F000000"/>
                 <Button x:Name="btnLogs" Content="Истроия" 
-                        Click="History_Click"
-                        Visibility="Collapsed"/>
-                <Separator x:Name="LineLogs" Visibility="Collapsed" Background="#3F000000"/>
+                        Click="History_Click"/>
+                <Separator x:Name="LineLogs" Background="#3F000000"/>
                 <Button x:Name="btnHelp" 
                         Click="btnHelp_Click_1">
                     <materialDesign:PackIcon Kind="Help" Foreground="#DD000000" />

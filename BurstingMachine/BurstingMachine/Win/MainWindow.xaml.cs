@@ -51,26 +51,6 @@ namespace BurstingMachine
             messageInf.Show();
         }
 
-        private void CBMeasurement_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (CBMeasurement.SelectedItem is ComboBoxItem selectedItem)
-            {
-                string selectedText = selectedItem.Content.ToString();
-
-                switch (selectedText)
-                {
-                    case "Однократное измерение":
-                        btnLogs.Visibility = Visibility.Collapsed;
-                        LineLogs.Visibility = Visibility.Collapsed;
-                        break;
-                    case "Множественное измерение":
-                        btnLogs.Visibility = Visibility.Visible;
-                        LineLogs.Visibility = Visibility.Visible;
-                        break;
-                }
-            }
-        }
-
         private void Report_Click(object sender, RoutedEventArgs e)
         {
             ChartFrame.Navigate(new Reports());
