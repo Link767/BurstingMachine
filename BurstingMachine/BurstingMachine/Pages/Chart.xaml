@@ -19,7 +19,6 @@
             <ColumnDefinition Width = "*" />
             <ColumnDefinition Width = "*" />
             <ColumnDefinition Width = "*" />
-
             <ColumnDefinition Width = "*" />
         </Grid.ColumnDefinitions >
         <Grid.RowDefinitions >
@@ -36,7 +35,7 @@
 
         <ScottPlot:WpfPlot x:Name = "WpfPlot1"
                            Grid.Row = "1" Grid.ColumnSpan = "8"
-                           Grid.RowSpan = "8" Margin = "10,10,10,26" />
+                           Grid.RowSpan = "8" Margin = "10,10,99,26" />
 
         <Button x:Name = "btnTest"
                 Grid.Column = "7" Content = "Тест"
@@ -64,18 +63,30 @@
             Margin="5,10,5,5"/>
 
         <Button x:Name = "btnIncrease"
-                HorizontalAlignment = "Left" VerticalAlignment = "Center"
+                HorizontalAlignment = "Left" VerticalAlignment = "Top"
                 Width = "76"
-                Background = "{x:Null}" BorderBrush = "{x:Null}"
-                Foreground = "#DD000000" Margin = "5,0,0,0" Height="60">
+                Background = "{x:Null}" BorderBrush = "Black"
+                Foreground = "#DD000000" Margin = "113,54,0,0" 
+                Height="60" Grid.Column="7" Grid.Row="5" Grid.RowSpan="2" Click="btnIncrease_Click">
             <materialDesign:PackIcon Kind="MagnifyPlusOutline" Height="42" Width="53"/>
         </Button>
+
         <Button x:Name = "btnReduce"
-                HorizontalAlignment = "Left" VerticalAlignment = "Center"
+                HorizontalAlignment = "Left" VerticalAlignment = "Top"
                 Width = "76"
-                Background = "{x:Null}" BorderBrush = "{x:Null}"
-                Foreground = "#DD000000" Margin = "86,0,0,0" Height="60">
+                Background = "{x:Null}" BorderBrush = "Black"
+                Foreground = "#DD000000" Margin = "113,54,0,0"
+                Height="60" Grid.Column="7" Grid.Row="7" Grid.RowSpan="2" Click="btnReduce_Click">
             <materialDesign:PackIcon Kind="MagnifyMinusOutline" Height="42" Width="53"/>
+        </Button>
+
+        <Button x:Name = "btnNormalize"
+                HorizontalAlignment = "Left" VerticalAlignment = "Top"
+                Width = "76"
+                Background = "{x:Null}" BorderBrush = "Black"
+                Foreground = "#DD000000" Margin = "113,54,0,0"
+                Height="60" Grid.Column="7" Grid.Row="6" Grid.RowSpan="2" Cursor="Hand" Click="btnNormalize_Click">
+            <materialDesign:PackIcon Kind="MagnifyScan" Height="42" Width="53"/>
         </Button>
     </Grid>
 </Page>

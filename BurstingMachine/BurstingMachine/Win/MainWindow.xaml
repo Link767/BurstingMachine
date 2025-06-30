@@ -43,32 +43,38 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <ToolBarTray Margin="0,0,124,73" Grid.Row="1" Grid.ColumnSpan="9" Grid.RowSpan="2">
-            <ToolBar
+        <ToolBarTray Margin="0,0,0,4" Grid.ColumnSpan="10"
+                     Grid.RowSpan="2" Background="#FFD2D2D2">
+            <ToolBar 
                 ClipToBounds="False"
-                Style="{StaticResource MaterialDesignToolBar}">
+                Style="{StaticResource MaterialDesignToolBar}" Background="#FFD2D2D2">
                 <Image Source="/Res/Logo.png" Height="44" Width="44"/>
-                <Separator/>
+                <Separator Background="#3F000000"/>
                 <ComboBox x:Name="CBMeasurement"
                   materialDesign:HintAssist.Hint="Количество измерений"
                   Style="{StaticResource MaterialDesignOutlinedComboBox}" 
-                  Grid.ColumnSpan="2" Height="46" SelectionChanged="CBMeasurement_SelectionChanged">
+                  Grid.ColumnSpan="2" Height="46" SelectionChanged="CBMeasurement_SelectionChanged" Width="236">
                     <ComboBoxItem Name="Solo"
                         Content="Однократное измерение" />
                     <ComboBoxItem Name="Grup"
                         Content="Множественное измерение" />
                 </ComboBox>
-                <Separator/>
-                <Button x:Name="Chart" Content="График" Click="Chart_Click" Width="80"/>
-                <Separator/>
-                <Button x:Name="Setings" Content="Настройки" Click="SetingsPage_Click"/>
-                <Separator/>
-                <Button x:Name="Report" Content="Отчет" Click="Report_Click"/>
-                <Separator/>
-                <Button x:Name="btnLogs" Content="Истроия" Click="History_Click"
+                <Separator Background="#3F000000"/>
+                <Button x:Name="Chart" Content="График"
+                        Click="Chart_Click" Width="80"/>
+                <Separator Background="#3F000000"/>
+                <Button x:Name="Setings" Content="Настройки" 
+                        Click="SetingsPage_Click"/>
+                <Separator Background="#3F000000"/>
+                <Button x:Name="Report" Content="Отчет" 
+                        Click="Report_Click"/>
+                <Separator Background="#3F000000"/>
+                <Button x:Name="btnLogs" Content="Истроия" 
+                        Click="History_Click"
                         Visibility="Collapsed"/>
-                <Separator x:Name="LineLogs" Visibility="Collapsed"/>
-                <Button x:Name="btnHelp" Click="btnHelp_Click_1">
+                <Separator x:Name="LineLogs" Visibility="Collapsed" Background="#3F000000"/>
+                <Button x:Name="btnHelp" 
+                        Click="btnHelp_Click_1">
                     <materialDesign:PackIcon Kind="Help" Foreground="#DD000000" />
                 </Button>
             </ToolBar>

@@ -36,5 +36,21 @@ namespace BurstingMachine.Pages
             myPlot.MarkerColor = ScottPlot.Colors.Red;
             WpfPlot1.Refresh();
         }
+
+        private void btnNormalize_Click(object sender, RoutedEventArgs e)
+        {
+            WpfPlot1.Plot.Axes.AutoScale();
+            WpfPlot1.Refresh();
+        }
+
+        private void btnIncrease_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void btnReduce_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
