@@ -51,20 +51,17 @@
                 <Image Source="/Res/Logo.png" Height="44" Width="44"/>
                 <Separator Background="#3F000000"/>
                 <ComboBox x:Name="CBMeasurement"
-                  materialDesign:HintAssist.Hint="Количество измерений"
                   Style="{StaticResource MaterialDesignOutlinedComboBox}" 
                   Grid.ColumnSpan="2" Height="46" Width="236">
                     <ComboBoxItem Name="Solo"
-                        Content="Однократное измерение" />
+                                  Content="Однократное измерение"
+                                  IsSelected="True"/>
                     <ComboBoxItem Name="Grup"
                         Content="Множественное измерение" />
                 </ComboBox>
                 <Separator Background="#3F000000"/>
-                <Button x:Name="Chart" Content="График"
+                <Button x:Name="btnChart" Content="График"
                         Click="Chart_Click" Width="80"/>
-                <Separator Background="#3F000000"/>
-                <Button x:Name="Setings" Content="Настройки" 
-                        Click="SetingsPage_Click"/>
                 <Separator Background="#3F000000"/>
                 <Button x:Name="Report" Content="Отчет" 
                         Click="Report_Click"/>
@@ -73,7 +70,8 @@
                         Click="History_Click"/>
                 <Separator x:Name="LineLogs" Background="#3F000000"/>
                 <Button x:Name="btnHelp" 
-                        Click="btnHelp_Click_1">
+                        Click="btnHelp_Click_1"
+                        ToolTip="Помощь">
                     <materialDesign:PackIcon Kind="Help" Foreground="#DD000000" />
                 </Button>
             </ToolBar>
@@ -88,14 +86,25 @@
                  VerticalAlignment="Top"
                  materialDesign:HintAssist.Hint="Cтатус"
                  Style="{StaticResource MaterialDesignOutlinedTextBox}" 
-                 Grid.Column="1" Margin="5,19,55,0" Grid.Row="10" Grid.ColumnSpan="8"/>
+                 Grid.Column="1" Margin="5,19,129,0" Grid.Row="10" Grid.ColumnSpan="8"/>
         <materialDesign:Card Padding="4"
-                             UniformCornerRadius="14" Margin="149,20,0,12" 
+                             UniformCornerRadius="14" Margin="75,19,75,13" 
                              Grid.Row="10" Grid.Column="8">
             <ProgressBar x:Name="PBar"
                 IsIndeterminate="True"
                 Style="{StaticResource MaterialDesignCircularProgressBar}"
                 Value="50"/>
         </materialDesign:Card>
+
+        <Button x:Name="btnSetings"
+                Click="SetingsPage_Click" Grid.Column="8" 
+                Margin="129,26,0,10" Grid.Row="10" Background="{x:Null}" 
+                BorderBrush="Black" Foreground="#DD000000" 
+                HorizontalAlignment="Left" Width="63"
+                ToolTip="Настройки">
+            <materialDesign:PackIcon Kind="Cog" Height="26"
+                                     Width="33" VerticalAlignment="Stretch" 
+                                     HorizontalAlignment="Stretch" />
+        </Button>
     </Grid>
 </Window>

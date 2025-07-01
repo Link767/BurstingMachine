@@ -1,6 +1,7 @@
 ﻿using BurstingMachine.Lib;
 using BurstingMachine.Pages;
 using BurstingMachine.Win;
+using Microsoft.Win32;
 using ScottPlot;
 using ScottPlot.WPF;
 using System.Diagnostics.Metrics;
@@ -18,6 +19,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using static MaterialDesignThemes.Wpf.Theme;
+using System.Diagnostics;
+using System.IO;
+using ScottPlot.Colormaps;
 
 namespace BurstingMachine
 {
@@ -33,13 +38,6 @@ namespace BurstingMachine
         {
             ChartFrame.Navigate(new Setings());
         }
-
-        private void Chart_Click(object sender, RoutedEventArgs e)
-        {
-            ChartFrame.Navigate(new Chart());
-
-        }
-
         private void History_Click(object sender, RoutedEventArgs e)
         {
             Logs logs = new Logs();
@@ -47,13 +45,20 @@ namespace BurstingMachine
         }
         private void btnHelp_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageInf messageInf = new MessageInf("Тут будет подсказка");
-            messageInf.Show();
+            
         }
 
         private void Report_Click(object sender, RoutedEventArgs e)
         {
             ChartFrame.Navigate(new Reports());
+        }
+
+        private void Chart_Click(object sender, RoutedEventArgs e)
+        {
+            ChartFrame.Navigate(new Chart());
+            btnChart.BorderBrush = System.Windows.Media.Brushes.Green;
+            btnChart.BorderThickness = new Thickness(10);
+
         }
     }
 }

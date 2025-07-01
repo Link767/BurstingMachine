@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO.Ports;
 
 namespace BurstingMachine.Pages
 {
@@ -36,7 +37,7 @@ namespace BurstingMachine.Pages
 
         private void btnSetSetings_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void btnTestSetings_Click(object sender, RoutedEventArgs e)
