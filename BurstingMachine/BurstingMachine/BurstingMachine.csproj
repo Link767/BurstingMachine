@@ -9,10 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Doc\Руководство.docx" />
     <None Remove="Res\caution.png" />
     <None Remove="Res\error.png" />
     <None Remove="Res\info.png" />
     <None Remove="Res\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Doc\Руководство.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -37,10 +44,6 @@
     <Resource Include="Res\Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Doc\" />
   </ItemGroup>
 
 </Project>

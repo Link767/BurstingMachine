@@ -1,28 +1,9 @@
-﻿using BurstingMachine.Lib;
-using BurstingMachine.Pages;
+﻿using BurstingMachine.Pages;
 using BurstingMachine.Win;
-using Microsoft.Win32;
-using ScottPlot;
-using ScottPlot.WPF;
-using System.Diagnostics.Metrics;
-using System.Drawing;
-using System.Drawing.Printing;
-using System.IO.Ports;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Xml.Linq;
-using static MaterialDesignThemes.Wpf.Theme;
 using System.Diagnostics;
 using System.IO;
-using ScottPlot.Colormaps;
+
 
 namespace BurstingMachine
 {
@@ -38,15 +19,6 @@ namespace BurstingMachine
         {
             ChartFrame.Navigate(new Setings());
         }
-        private void History_Click(object sender, RoutedEventArgs e)
-        {
-            Logs logs = new Logs();
-            logs.Show();
-        }
-        private void btnHelp_Click_1(object sender, RoutedEventArgs e)
-        {
-            
-        }
 
         private void Report_Click(object sender, RoutedEventArgs e)
         {
@@ -59,6 +31,39 @@ namespace BurstingMachine
             btnChart.BorderBrush = System.Windows.Media.Brushes.Green;
             btnChart.BorderThickness = new Thickness(10);
 
+        }
+
+        private void MIHelp_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string relativePath = System.IO.Path.Combine("Doc", "Руководство.docx");
+                string fullPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
+
+                if (File.Exists(fullPath))
+                {
+                    Process.Start(new ProcessStartInfo(fullPath) { UseShellExecute = true });
+                }
+                else
+                {
+                    MessageBox.Show("Файл не найден:\n" + fullPath);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при открытии файла:\n" + ex.Message);
+            }
+        }
+
+        private void MIControlRebut_Click(object sender, RoutedEventArgs e)//Перезапуск контроллера
+        {
+
+        }
+
+        private void MIHistory_Click(object sender, RoutedEventArgs e)
+        {
+            Logs logs = new Logs();
+            logs.Show();
         }
     }
 }

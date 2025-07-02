@@ -45,11 +45,12 @@
 
         <ToolBarTray Margin="0,0,0,4" Grid.ColumnSpan="10"
                      Grid.RowSpan="2" Background="#FFD2D2D2">
-            <ToolBar 
-                ClipToBounds="False"
+            <ToolBar ClipToBounds="False"
                 Style="{StaticResource MaterialDesignToolBar}" Background="#FFD2D2D2">
                 <Image Source="/Res/Logo.png" Height="44" Width="44"/>
+                
                 <Separator Background="#3F000000"/>
+                
                 <ComboBox x:Name="CBMeasurement"
                   Style="{StaticResource MaterialDesignOutlinedComboBox}" 
                   Grid.ColumnSpan="2" Height="46" Width="236">
@@ -59,21 +60,37 @@
                     <ComboBoxItem Name="Grup"
                         Content="Множественное измерение" />
                 </ComboBox>
+                
                 <Separator Background="#3F000000"/>
+                
                 <Button x:Name="btnChart" Content="График"
-                        Click="Chart_Click" Width="80"/>
+                        Click="Chart_Click" Width="80" FontWeight="Normal"/>
+                
                 <Separator Background="#3F000000"/>
+                
                 <Button x:Name="Report" Content="Отчет" 
-                        Click="Report_Click"/>
+                        Click="Report_Click"
+                        ToolTip="Создайте отчет" FontWeight="Normal"/>
+                
                 <Separator Background="#3F000000"/>
-                <Button x:Name="btnLogs" Content="Истроия" 
-                        Click="History_Click"/>
-                <Separator x:Name="LineLogs" Background="#3F000000"/>
-                <Button x:Name="btnHelp" 
-                        Click="btnHelp_Click_1"
-                        ToolTip="Помощь">
-                    <materialDesign:PackIcon Kind="Help" Foreground="#DD000000" />
-                </Button>
+                
+                <Menu x:Name="MAdditionally">
+                    <MenuItem Header="Дополнительно" 
+                              FontFamily="Segoe UI" FontSize="12" Height="54">
+                        <MenuItem x:Name="MIHelp" Header="Помошь" Click="MIHelp_Click"
+                                  ToolTip ="Руководство пользователя"/>
+                        
+                        <MenuItem x:Name="MIHistory" Header="История" 
+                                  ToolTip="Перезагрузка контроллер"
+                                  Click="MIHistory_Click"/>
+                        
+                        <MenuItem x:Name="MIControlRebut" Header="Перезагрузка" 
+                                  ToolTip="Перезагрузка контроллер"
+                                  Click="MIControlRebut_Click"/>
+                    </MenuItem>
+                </Menu>
+                
+                <Separator Background="#3F000000"/>
             </ToolBar>
         </ToolBarTray>
 
@@ -93,7 +110,9 @@
             <ProgressBar x:Name="PBar"
                 IsIndeterminate="True"
                 Style="{StaticResource MaterialDesignCircularProgressBar}"
-                Value="50"/>
+                Value="0"
+                Minimum="0"
+                Maximum="100"/>
         </materialDesign:Card>
 
         <Button x:Name="btnSetings"

@@ -235,3 +235,5 @@ C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\ne
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\Logs.g.cs
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Pages\Reports.baml
 C:\Users\BUddha\Git\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\Win\Logs.baml
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\bin\Debug\net8.0-windows\Doc\Руководство.docx
+C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\BurstingMachine_Content.g.cs

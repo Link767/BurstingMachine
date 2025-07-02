@@ -33,9 +33,8 @@
             <RowDefinition Height = "*" />
         </Grid.RowDefinitions >
 
-        <ScottPlot:WpfPlot x:Name = "WpfPlot1"
-                           Grid.Row = "1" Grid.ColumnSpan = "8"
-                           Grid.RowSpan = "8" Margin = "46,10,99,56" />
+        <ScottPlot:WpfPlot x:Name = "WpfPlot1" Grid.ColumnSpan = "8"
+                           Grid.RowSpan = "9" Margin = "34,51,99,56" />
 
         <Button x:Name = "btnTest"
                 Grid.Column = "7" Content = "Тест"
@@ -51,7 +50,7 @@
                  IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
                  Style="{StaticResource MaterialDesignFilledTextBox}" 
                  TextAlignment="Justify" Grid.Column="2" 
-                 Margin="5,10,5,5"/>
+                 Margin="4,0,6,24"/>
 
         <TextBox x:Name="TBSpeed"
             MaxWidth="400"
@@ -60,7 +59,7 @@
             IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
             Style="{StaticResource MaterialDesignFilledTextBox}" 
             TextAlignment="Justify" Grid.Column="4" 
-            Margin="100,10,110,5" Grid.ColumnSpan="2"/>
+            Margin="98,0,111,24" Grid.ColumnSpan="2"/>
 
         <Button x:Name = "btnIncrease"
                 ToolTip="Приблизить график"
@@ -94,7 +93,7 @@
         </Button>
 
         <TextBlock Text="Сила(N)" FontSize="15" 
-                   FontFamily="Arial" Margin="-2,2,0,0" Grid.Row="4" VerticalAlignment="Top" 
+                   FontFamily="Arial" Margin="-12,2,0,0" Grid.Row="4" VerticalAlignment="Top" 
                    HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <TransformGroup>
@@ -106,18 +105,18 @@
             </TextBlock.RenderTransform>
         </TextBlock>
         <TextBlock Text="Ход(ММ)" FontSize="15" 
-                   FontFamily="Arial" Margin="165,24,165,24" Grid.Row="8" 
-                   Grid.Column="3" Grid.ColumnSpan="2" VerticalAlignment="Bottom" 
+                   FontFamily="Arial" Margin="135,0,0,32" Grid.Row="8" 
+                   Grid.Column="3" VerticalAlignment="Bottom" 
                    HorizontalAlignment="Left"/>
 
         <TextBlock Text="Сила(N)" FontSize="15" 
-                   FontFamily="Arial" Margin="131,43,0,0" 
-                   VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" 
-                   Grid.Column="1" HorizontalAlignment="Left" FontWeight="Bold"/>
+                   FontFamily="Arial" Margin="129,0,0,0" 
+                   VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" 
+                   Grid.Column="1" HorizontalAlignment="Left" FontWeight="Bold" Height="15"/>
 
         <TextBlock Text="Ход(ММ)" FontSize="15" 
-                   FontFamily="Arial" Margin="22,0,0,10" 
-                   Grid.Column="4" VerticalAlignment="Bottom" 
+                   FontFamily="Arial" Margin="22,0,0,0" 
+                   Grid.Column="4" VerticalAlignment="Center" 
                    HorizontalAlignment="Left" FontWeight="Bold"/>
 
     </Grid>

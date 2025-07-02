@@ -22,6 +22,7 @@ namespace BurstingMachine.Pages
 {
     public partial class Chart : Page
     {
+
         public Chart()
         {
             InitializeComponent();
