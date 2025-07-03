@@ -8,11 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BurstingMachine
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\
-=======
 build_property.ProjectDir = C:\Users\psv\BurstingMachine\BurstingMachine\BurstingMachine\
->>>>>>> 0a1baad (test)
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

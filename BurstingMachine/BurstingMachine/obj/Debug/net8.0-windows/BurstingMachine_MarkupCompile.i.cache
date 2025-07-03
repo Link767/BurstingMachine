@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\
+=======
+C:\Users\psv\BurstingMachine\BurstingMachine\BurstingMachine\obj\Debug\net8.0-windows\
+>>>>>>> 0a1baad (test)
 BurstingMachine
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+<<<<<<< HEAD
 C:\Users\win-112\GitHub\BurstingMachine\BurstingMachine\BurstingMachine\App.xaml
 8-1978966558
 1539309686
 17-1676997651
 221875929807
+=======
+C:\Users\psv\BurstingMachine\BurstingMachine\BurstingMachine\App.xaml
+8-1978966558
+
+16-46168266
+2218353801
+>>>>>>> 0a1baad (test)
 Pages\Chart.xaml;Pages\Reports.xaml;Pages\Setings.xaml;Win\Logs.xaml;Win\MainWindow.xaml;Win\MessageErr.xaml;Win\MessageInf.xaml;Win\MessageWar.xaml;
 
 True
