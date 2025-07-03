@@ -45,21 +45,19 @@
 
         <TextBox x:Name="TBNewtons"
                  MaxWidth="400"
-                 materialDesign:HintAssist.Hint="СИЛА"
                  AcceptsReturn="True"
                  IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
                  Style="{StaticResource MaterialDesignFilledTextBox}" 
                  TextAlignment="Justify" Grid.Column="2" 
-                 Margin="4,0,6,24"/>
+                 Margin="4,0,6,24" FontWeight="Bold" FontSize="15"/>
 
         <TextBox x:Name="TBSpeed"
             MaxWidth="400"
-            materialDesign:HintAssist.Hint="ХОД"
             AcceptsReturn="True"
             IsEnabled="{Binding IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}"
             Style="{StaticResource MaterialDesignFilledTextBox}" 
             TextAlignment="Justify" Grid.Column="4" 
-            Margin="98,0,111,24" Grid.ColumnSpan="2"/>
+            Margin="98,0,111,24" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="15"/>
 
         <Button x:Name = "btnIncrease"
                 ToolTip="Приблизить график"
