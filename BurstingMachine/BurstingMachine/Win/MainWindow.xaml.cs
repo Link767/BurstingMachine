@@ -54,6 +54,7 @@ namespace BurstingMachine
         private void Report_Click(object sender, RoutedEventArgs e)
         {
             ChartFrame.Navigate(new Reports());
+            //OK
         }
     }
 }
