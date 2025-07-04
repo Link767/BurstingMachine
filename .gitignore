@@ -1,4 +1,5 @@
 .vs/
-obj/
-Debug/
-Release/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ww]in/	
