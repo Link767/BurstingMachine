@@ -15,10 +15,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9412cb815c02a8e9b16c52a020d633ecd74daa10")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3a05c045cd21054377bbf893f06d7a715c48d14")]
 >>>>>>> 0a1baad (test)
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3a05c045cd21054377bbf893f06d7a715c48d14")]
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
 [assembly: System.Reflection.AssemblyProductAttribute("BurstingMachine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BurstingMachine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

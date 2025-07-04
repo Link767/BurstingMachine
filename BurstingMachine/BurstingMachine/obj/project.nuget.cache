@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "GtZCa10RVP8=",
   "success": true,
   "projectFilePath": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\BurstingMachine\\BurstingMachine.csproj",
@@ -60,6 +61,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\psv\\BurstingMachine\\BurstingMachine\\BurstingMachine\\BurstingMachine.csproj",
   "expectedPackageFiles": [
+=======
+  "dgSpecHash": "0f3SAnJKyF0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\psv\\BurstingMachine\\BurstingMachine\\BurstingMachine\\BurstingMachine.csproj",
+  "expectedPackageFiles": [
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
     "C:\\Users\\psv\\.nuget\\packages\\harfbuzzsharp\\7.3.0.3\\harfbuzzsharp.7.3.0.3.nupkg.sha512",
     "C:\\Users\\psv\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\7.3.0.3\\harfbuzzsharp.nativeassets.linux.7.3.0.3.nupkg.sha512",
     "C:\\Users\\psv\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\7.3.0.3\\harfbuzzsharp.nativeassets.macos.7.3.0.3.nupkg.sha512",
@@ -110,7 +117,10 @@
     "C:\\Users\\psv\\.nuget\\packages\\skiasharp.views.wpf\\2.88.9\\skiasharp.views.wpf.2.88.9.nupkg.sha512",
     "C:\\Users\\psv\\.nuget\\packages\\system.drawing.common\\4.7.3\\system.drawing.common.4.7.3.nupkg.sha512",
     "C:\\Users\\psv\\.nuget\\packages\\system.io.ports\\9.0.6\\system.io.ports.9.0.6.nupkg.sha512"
+<<<<<<< HEAD
 >>>>>>> 0a1baad (test)
+=======
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
   ],
   "logs": []
 }

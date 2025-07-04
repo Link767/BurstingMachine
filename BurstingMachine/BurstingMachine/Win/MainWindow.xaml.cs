@@ -66,5 +66,19 @@ namespace BurstingMachine
             Logs logs = new Logs();
             logs.Show();
         }
+<<<<<<< HEAD
+=======
+        private void btnHelp_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageInf messageInf = new MessageInf("Тут будет подсказка");
+            messageInf.Show();
+        }
+
+        private void Report_Click(object sender, RoutedEventArgs e)
+        {
+            ChartFrame.Navigate(new Reports());
+            //OK
+        }
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
     }
 }

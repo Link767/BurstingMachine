@@ -1,6 +1,7 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\win-112\\GitHub\\BurstingMachine\\BurstingMachine\\",
   "Documents": [
     {
@@ -19,12 +20,17 @@
       "AbsoluteMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|c:\\users\\win-112\\github\\burstingmachine\\burstingmachine\\burstingmachine\\pages\\chart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|solutionrelative:burstingmachine\\pages\\chart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
 =======
+=======
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
   "WorkspaceRootPath": "C:\\Users\\psv\\BurstingMachine\\BurstingMachine\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|c:\\users\\psv\\burstingmachine\\burstingmachine\\burstingmachine\\win\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C50738B-34BF-4B9A-941F-17E319501BCB}|BurstingMachine\\BurstingMachine.csproj|solutionrelative:burstingmachine\\win\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
 >>>>>>> 0a1baad (test)
+=======
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
     }
   ],
   "DocumentGroupContainers": [
@@ -34,6 +40,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
+<<<<<<< HEAD
 <<<<<<< HEAD
           "SelectedChildIndex": 2,
           "Children": [
@@ -90,6 +97,12 @@
           "Children": [
             {
               "$type": "Document",
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\psv\\BurstingMachine\\BurstingMachine\\BurstingMachine\\Win\\MainWindow.xaml.cs",
@@ -99,7 +112,10 @@
               "ViewState": "AgIAACkAAAAAAAAAAAAwwDgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T13:24:02.724Z",
+<<<<<<< HEAD
 >>>>>>> 0a1baad (test)
+=======
+>>>>>>> 48d8df1cb459ba60f07d51f3e022b89512a13661
               "EditorCaption": ""
             }
           ]
