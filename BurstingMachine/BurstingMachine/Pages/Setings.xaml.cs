@@ -38,6 +38,7 @@ namespace BurstingMachine.Pages
         private void btnSetSetings_Click(object sender, RoutedEventArgs e)
         {
             Chart.PointNum = Convert.ToInt32(TBNumOrPoint.Text); // <----- Колличество точек после запятой
+
         }
 
         private void btnTestSetings_Click(object sender, RoutedEventArgs e)

@@ -3,6 +3,7 @@ using BurstingMachine.Win;
 using System.Windows;
 using System.Diagnostics;
 using System.IO;
+using BurstingMachine.Classes;
 
 
 namespace BurstingMachine
@@ -13,6 +14,7 @@ namespace BurstingMachine
         {
             InitializeComponent();
             ChartFrame.Navigate(new Chart());
+            TBLog.Text = "Ожидание команды";
         }
 
         private void SetingsPage_Click(object sender, RoutedEventArgs e)
@@ -46,12 +48,12 @@ namespace BurstingMachine
                 }
                 else
                 {
-                    MessageBox.Show("Файл не найден:\n" + fullPath);
+                    MBClass.Inf("Файл не найден:\n" + fullPath);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при открытии файла:\n" + ex.Message);
+                MBClass.Err("Ошибка при открытии файла:\n" + ex.Message);
             }
         }
 

@@ -58,11 +58,11 @@
 
         <TextBox x:Name="TBSpeedCarriages" 
                  Grid.Column="5" Margin="57,31,84,42" 
-                 Grid.Row="1" Grid.ColumnSpan="2"/>
+                 Grid.Row="1" Grid.ColumnSpan="2" FontSize="15"/>
 
         <TextBox x:Name="TBSpeedMeasurements" 
                  Grid.Column="5" Margin="57,90,84,85"
-                 Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                 Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" FontSize="15"/>
 
         <Button x:Name = "btnCom"
                 Grid.Column = "2" Content = "Устновить порт"
@@ -95,9 +95,9 @@
                    Margin="16,50,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2" 
                    HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <TextBox x:Name="TBNumOrPoint" 
+        <TextBox x:Name="TBNumOrPoint" Text="2"
                  ToolTip="Сколько будет цифр после запятой в полях СИЛА/ХОД"
                  Grid.Column="5" Margin="55,62,86,10"
-                 Grid.Row="2" Grid.ColumnSpan="2"/>
+                 Grid.Row="2" Grid.ColumnSpan="2" FontSize="15"/>
     </Grid>
 </Page>

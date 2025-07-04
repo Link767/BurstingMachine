@@ -38,27 +38,59 @@
         </Grid.RowDefinitions>
 
         <DatePicker x:Name="DPData"
-                    Style="{StaticResource MaterialDesignFilledDatePicker}" 
-                    Grid.Column="2" Grid.ColumnSpan="2" 
-                    Margin="9,10,10,10" SelectedDate="{x:Static sys:DateTime.Now}"
-                    FontSize="20"/>
+                    Style="{StaticResource MaterialDesignFilledDatePicker}" Grid.ColumnSpan="2" 
+                    Margin="10,10,10,10" SelectedDate="{x:Static sys:DateTime.Now}"
+                    FontSize="20" Grid.Row="4"/>
 
+        <materialDesign:TimePicker x:Name="TimePicer"
+                                   Is24Hours="True"
+                                   Style="{StaticResource MaterialDesignOutlinedTimePicker}" Grid.ColumnSpan="2" 
+                                   SelectedTime="{x:Static sys:DateTime.Now}"
+                                   Margin="10,10,10,7" Grid.Row="5" FontSize="15"/>
         <TextBox x:Name="TBNameTest"
                  VerticalAlignment="Center"
-                 materialDesign:HintAssist.Hint="Название теста"
+                 materialDesign:HintAssist.Hint="Название испытания*"
                  Style="{StaticResource MaterialDesignFilledTextBox}"
                  TextWrapping="Wrap" Grid.ColumnSpan="2" 
-                 Margin="10,0,11,0" Height="50"/>
+                 Margin="10,0,10,0" Height="50" Grid.Row="1"/>
+
+        <TextBox x:Name="TBNameStaff"
+                 VerticalAlignment="Center"
+                 materialDesign:HintAssist.Hint="Испытатель"
+                 Style="{StaticResource MaterialDesignFilledTextBox}"
+                 TextWrapping="Wrap" Grid.ColumnSpan="2" 
+                 Margin="10,0,10,0" Height="50" FontSize="15"/>
+
+        <TextBox x:Name="TBNewtons"
+                 VerticalAlignment="Center"
+                 materialDesign:HintAssist.Hint="Верхнее усилие"
+                 Style="{StaticResource MaterialDesignFilledTextBox}"
+                 TextWrapping="Wrap" Grid.ColumnSpan="2" 
+                 Margin="10,0,10,0" Height="50" Grid.Row="2"/>
+
+        <TextBox x:Name="TBSpeed"
+                 VerticalAlignment="Center"
+                 materialDesign:HintAssist.Hint="Скорость измерения"
+                 Style="{StaticResource MaterialDesignFilledTextBox}"
+                 TextWrapping="Wrap" Grid.ColumnSpan="2" 
+                 Margin="10,0,8,0" Height="50" Grid.Row="3"/>
 
         <Button x:Name = "btnSaveReport"
-                Grid.Column = "3" Content = "Сохранить"
-                HorizontalAlignment = "Center" VerticalAlignment = "Top"
+                Grid.Column = "1" Content = "Сохранить"
+                HorizontalAlignment = "Left" VerticalAlignment = "Center"
                 Width = "112"
                 Background = "{x:Null}" BorderBrush = "Black"
-                Foreground = "#DD000000" Grid.Row="7" Margin="0,28,0,0"/>
+                Foreground = "#DD000000" Grid.Row="6" 
+                Margin="17,0,0,0"/>
 
-        <Frame x:Name="PreviewFrame" Grid.Column="7"
-               Grid.RowSpan="9" Grid.ColumnSpan="5"
-               Background="Green"/>
+        <Button x:Name = "btnPushMail"
+                ToolTip="Отправьте отчет по почте" Content = "Отправить"
+                HorizontalAlignment = "Center" VerticalAlignment = "Center"
+                Width = "112"
+                Background = "{x:Null}" BorderBrush = "Black"
+                Foreground = "#DD000000" Grid.Row="6" Click="btnPushMail_Click"/>
+
+        <Image Grid.ColumnSpan="10" Margin="1,9,1,26" Grid.RowSpan="7" 
+               Source="C:\Users\win-112\GitHub\Plot.png" Grid.Column="2"/>
     </Grid>
 </Page>

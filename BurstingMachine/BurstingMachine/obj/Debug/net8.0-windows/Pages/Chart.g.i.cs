@@ -113,7 +113,7 @@ namespace BurstingMachine.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BurstingMachine;V1.0.0.0;component/pages/chart.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BurstingMachine;component/pages/chart.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\Chart.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using BurstingMachine.Classes;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace BurstingMachine.Pages
@@ -10,20 +11,20 @@ namespace BurstingMachine.Pages
         {
             InitializeComponent();
         }
-        private async void LoadNewtons()
+        private async void LoadNewtonsAndSpeed()
         {
             for (double i = 0; i < 10; i += 0.10) 
             {
-                TBNewtons.Text = i.ToString($"F{PointNum}");
-                await Task.Delay(500); // 1 секунда паузы
-            }
-        }
-        private async void LoadSpeed()
-        {
-            
-            for (double i = 0; i < 10; i += 0.10)
-            {
-                TBSpeed.Text = i.ToString($"F{PointNum}");
+                if(PointNum == 0)
+                {
+                    TBNewtons.Text = i.ToString($"F2");
+                    TBSpeed.Text = i.ToString($"F2");
+                }
+                else
+                {
+                    TBNewtons.Text = i.ToString($"F{PointNum}");
+                    TBSpeed.Text = i.ToString($"F{PointNum}");
+                }
                 await Task.Delay(500); // 1 секунда паузы
             }
         }
@@ -48,6 +49,8 @@ namespace BurstingMachine.Pages
 
                 AScale();
                 await Task.Delay(500);
+                if(FulldataX[i] ==FulldataX.Length)
+                    MBClass.Inf("Измерение завершено");
             }
         }
         private void AScale()
@@ -58,8 +61,7 @@ namespace BurstingMachine.Pages
         private void btnStop_Click(object sender, RoutedEventArgs e)
         {
             LoadPlot();
-            LoadNewtons();
-            LoadSpeed();
+            LoadNewtonsAndSpeed();
         }
         private void btnNormalize_Click(object sender, RoutedEventArgs e)
         {

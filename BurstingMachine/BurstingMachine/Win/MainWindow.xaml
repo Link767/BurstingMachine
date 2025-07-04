@@ -9,7 +9,7 @@
         Style="{StaticResource MaterialDesignWindow}"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         WindowStartupLocation="CenterScreen"
-        Height="801" Width="1609">
+        Height="801" Width="1609" Title="Разрывная машина ВНИИКП">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="b2v" />
     </Window.Resources>
@@ -64,7 +64,7 @@
                 <Separator Background="#3F000000"/>
                 
                 <Button x:Name="btnChart" Content="График"
-                        Click="Chart_Click" Width="80" FontWeight="Normal"/>
+                        Click="Chart_Click" Width="80" FontWeight="Normal" Background="{x:Null}" Foreground="#DD000000" BorderBrush="{x:Null}"/>
                 
                 <Separator Background="#3F000000"/>
                 
@@ -101,9 +101,9 @@
 
         <TextBox x:Name="TBLog"
                  VerticalAlignment="Top"
-                 materialDesign:HintAssist.Hint="Cтатус"
                  Style="{StaticResource MaterialDesignOutlinedTextBox}" 
-                 Grid.Column="1" Margin="5,19,129,0" Grid.Row="10" Grid.ColumnSpan="8"/>
+                 Grid.Column="1" Margin="5,19,129,0" Grid.Row="10"
+                 Grid.ColumnSpan="8"/>
         <materialDesign:Card Padding="4"
                              UniformCornerRadius="14" Margin="75,19,75,13" 
                              Grid.Row="10" Grid.Column="8">
